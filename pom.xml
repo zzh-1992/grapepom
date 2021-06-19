@@ -35,6 +35,10 @@
         <kafka.version>2.6.0</kafka.version>
         <lombok.version>1.18.20</lombok.version>
 
+        <snakeyaml.version>1.26</snakeyaml.version>
+        <poi-ooxml.version>3.17</poi-ooxml.version>
+        <dom4j.version>1.6.1</dom4j.version>
+
         <local.version>1.0</local.version>
     </properties>
 
@@ -209,6 +213,25 @@
                 <version>${fastjson.version}</version>
             </dependency>
             <!--==========================外部依赖 begin==========================-->
+
+            <!--==========================文件解析 begin==========================-->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi-ooxml.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>${dom4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <!--==========================文件解析 end==========================-->
 
 
             <!--==========================本地依赖==========================-->
